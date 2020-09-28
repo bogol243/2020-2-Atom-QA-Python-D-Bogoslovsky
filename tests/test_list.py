@@ -29,7 +29,7 @@ def test_append(t_list, elem):
     """
     appending elements with different types to list
     """
-    print(elem)
+    print(type(elem))
     t_list.append(elem)
     assert t_list[-1] == elem
 
@@ -56,33 +56,39 @@ def get_count_data(t_list):
 
 class TestMax:
 
-    def test_normal(self, t_list):
+    @pytest.fixture(scope="function", autouse=True)
+    def setup(self, t_list, empty_list, noncomp_list):
+        self.t_list = t_list
+        self.empty_list = empty_list
+        self.noncomp_list = noncomp_list
+
+    def test_normal(self):
         """
         Normal case: list is not empty
         and cosists of comparable emelents
         """
-        max_el = self.__max_el__(t_list)
-        assert max(t_list) == max_el
+        max_el = self.__max_el__()
+        assert max(self.t_list) == max_el
 
-    def test_empty(self, empty_list):
+    def test_empty(self):
         """Empty case: list is empty"""
         with pytest.raises(ValueError):
-            max(empty_list)
+            max(self.empty_list)
 
-    def test_noncomp(self, noncomp_list):
+    def test_noncomp(self):
         """
         Non-comparable case: list is not empty
         but consists of non-comparable elements
         """
         with pytest.raises(TypeError):
-            max(noncomp_list)
+            max(self.noncomp_list)
 
-    def __max_el__(self, t_list):
+    def __max_el__(self):
         """
         Provide max element to test max() method of type list
         """
-        max_elem = t_list[0]
-        for elem in t_list:
+        max_elem = self.t_list[0]
+        for elem in self.t_list:
             if elem > max_elem:
-                max_el = elem
-        return max_el
+                max_elem = elem
+        return max_elem
