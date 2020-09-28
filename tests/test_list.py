@@ -4,24 +4,28 @@ here's a docstring for module test_list.py
 import random
 import pytest
 
+
 @pytest.fixture()
 def t_list():
     """return list of random length, randomly filled with integers"""
     return [random.randint(0, 10) for _ in range(random.randint(10, 100))]
+
 
 @pytest.fixture(scope='module')
 def empty_list():
     """return empty list"""
     return []
 
+
 @pytest.fixture(scope='module')
 def noncomp_list():
     """return the list of non-comparable entities"""
-    return [{str(r_int:=random.randint(0, 100)):r_int} for _ in range(1, 100)]
+    return [{str(r_int:=random.randint(0, 100)): r_int} for _ in range(1, 100)]
+
 
 @pytest.mark.parametrize("elem", [(r_int:=random.randint(0, 100)),
                                   str(r_int)*4,
-                                  {str(r_int):r_int},
+                                  {str(r_int): r_int},
                                   lambda x: x+r_int,
                                   list(range(r_int)),
                                   None])
@@ -33,6 +37,7 @@ def test_append(t_list, elem):
     t_list.append(elem)
     assert t_list[-1] == elem
 
+
 def test_count(t_list, empty_list):
     """
     Test count method of list type
@@ -40,6 +45,7 @@ def test_count(t_list, empty_list):
     data = get_count_data(t_list)
     assert t_list.count(data['elem']) == data['count']
     assert empty_list.count(random.randint(0, 10)) == 0
+
 
 def get_count_data(t_list):
     """
@@ -50,8 +56,7 @@ def get_count_data(t_list):
     for elem in t_list:
         if elem == test_elem:
             count = count + 1
-    return {'elem':test_elem, 'count':count}
-
+    return {'elem': test_elem, 'count': count}
 
 
 class TestMax:
