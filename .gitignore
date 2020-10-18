@@ -1,1 +1,5 @@
 *.pyc
+*.json
+*.env
+*.exe
+!browsers.json
