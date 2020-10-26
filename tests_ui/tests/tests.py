@@ -23,7 +23,6 @@ def test_login(driver):
 
     assert driver.current_url == "https://target.my.com/dashboard"
 
-
 @pytest.mark.UI
 def test_login_negative(driver):
     login_page = LoginPage(driver)
@@ -67,17 +66,18 @@ def test_create_campaign(dashboard_page: DashboardPage, campaign_name):
 
 
 @pytest.mark.UI
-def test_create_segment(dashboard_page: DashboardPage):
+def test_create_segment(dashboard_page: DashboardPage, api_client: ApiClient):
     page = SegmentsPage(dashboard_page.driver)
     page.create_new_segment()
     segment = page.find_segment_created()
-
+    segment_id = segment.get_attribute("href").split('/')[-1]
     assert segment is not None
+    
+    api_client.delete_segment(segment_id)
     #тест пройден, теперь удалим то что создали
-    page.click(page.locators.CREATED_CAMPAIGN_CHECKBOX_CREATE)
-    page.click(page.locators.TABLE_ACTIONS_DROPDOWN)
-    page.click(page.locators.TABLE_ACTION_DELETE_BUTTON)
-
+    #page.click(page.locators.CREATED_CAMPAIGN_CHECKBOX_CREATE)
+    #page.click(page.locators.TABLE_ACTIONS_DROPDOWN)
+    #page.click(page.locators.TABLE_ACTION_DELETE_BUTTON)
 
 @pytest.mark.UI
 def test_delete_segment(segments_page_with_segment: SegmentsPage):

@@ -9,12 +9,17 @@ from tests_ui.ui.settings import credentials, segment_delete_name
 
 from webdriver_manager.chrome import ChromeDriverManager
 
+from tests_api.api.client import ApiClient
+
 import uuid
 
 
 class UsupportedBrowserException(Exception):
     pass
 
+@pytest.fixture
+def api_client():
+    return ApiClient("https://target.my.com", credentials["email"], credentials["password"])
 
 @pytest.fixture(scope='session')
 def config(request):
@@ -82,10 +87,13 @@ def dashboard_page(driver):
 
 
 @pytest.fixture
-def segments_page_with_segment(dashboard_page):
+def segments_page_with_segment(dashboard_page, api_client: ApiClient):
+    seg_created = api_client.create_segment(segment_delete_name)
     page = SegmentsPage(dashboard_page.driver)
-    page.create_new_segment(segment_delete_name)
-    return page
+    yield page
+    
+    # если вдруг тест не сможет удалить сегмент
+    api_client.delete_segment(seg_created["id"])
 
 
 @pytest.fixture
