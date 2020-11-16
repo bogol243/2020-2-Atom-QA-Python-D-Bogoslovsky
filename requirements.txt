@@ -2,3 +2,4 @@ pytest
 selenium
 webdriver_manager
 pytest-xdist
+flask
