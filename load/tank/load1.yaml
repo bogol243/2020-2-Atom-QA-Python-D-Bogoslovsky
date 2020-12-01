@@ -1,0 +1,14 @@
+phantom:
+  address: docker.for.win.localhost:5555
+  ammofile: /var/loadtest/ammo.txt
+  load_profile:
+    load_type: rps
+    schedule: const(2, 30)
+overload:
+  enabled: true
+  token_file: /var/loadtest/token
+  package: yandextank.plugins.DataUploader
+  job_name: Technoatom-QA-Homework-Tank-1
+  job_dsc: By Bogoslovsky Dmitry
+telegraf:
+  enabled: false

@@ -1,0 +1,90 @@
+2020-11-23 14:09:56,620 [INFO] root consoleworker.py:434	Log file created
+2020-11-23 14:09:56,621 [INFO] root consoleworker.py:438	Logging handler <logging.FileHandler object at 0x7f61c1601b90> added
+2020-11-23 14:09:56,621 [INFO] root consoleworker.py:438	Logging handler <logging.StreamHandler object at 0x7f61c164a7d0> added
+2020-11-23 14:09:56,622 [INFO] root consoleworker.py:438	Logging handler <logging.StreamHandler object at 0x7f61c15ef9d0> added
+2020-11-23 14:09:56,623 [INFO] root consoleworker.py:373	Created a folder for the test. /var/loadtest/logs/2020-11-23_14-09-56.517625
+2020-11-23 14:09:56,624 [INFO] yandextank.core.tankcore tankcore.py:237	Configuring plugins...
+2020-11-23 14:09:56,626 [INFO] yandextank.core.tankcore tankcore.py:190	Loading plugins...
+2020-11-23 14:09:56,631 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin phantom from yandextank.plugins.Phantom
+2020-11-23 14:09:56,633 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin rcheck from yandextank.plugins.ResourceCheck
+2020-11-23 14:09:56,634 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin json_report from yandextank.plugins.JsonReport
+2020-11-23 14:09:56,643 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin overload from yandextank.plugins.DataUploader
+2020-11-23 14:09:56,644 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin rcassert from yandextank.plugins.RCAssert
+2020-11-23 14:09:56,644 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin console from yandextank.plugins.Console
+2020-11-23 14:09:56,645 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin shellexec from yandextank.plugins.ShellExec
+2020-11-23 14:09:56,646 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin autostop from yandextank.plugins.Autostop
+2020-11-23 14:09:56,646 [DEBUG] yandextank.core.tankcore tankcore.py:212	Plugin instances: {'plugin_phantom': <yandextank.plugins.Phantom.plugin.Plugin object at 0x7f61c1340f50>, 'plugin_autostop': <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f61c13436d0>, 'plugin_shellexec': <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f61c1343110>, 'plugin_console': <yandextank.plugins.Console.plugin.Plugin object at 0x7f61c13431d0>, 'plugin_rcassert': <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f61c13434d0>, 'plugin_rcheck': <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f61c1340e10>, 'plugin_overload': <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7f61c13409d0>, 'plugin_json_report': <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7f61c166a990>}
+2020-11-23 14:09:56,647 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.Phantom.plugin.Plugin object at 0x7f61c1340f50>
+2020-11-23 14:09:56,649 [DEBUG] yandextank.core.tankcore tankcore.py:391	Searching for plugin: <class 'yandextank.plugins.Autostop.plugin.Plugin'>
+2020-11-23 14:09:56,658 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_14-09-56.517625/answ_vUeTDo.log
+2020-11-23 14:09:56,663 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_14-09-56.517625/phout_7_6UEJ.log
+2020-11-23 14:09:56,663 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_14-09-56.517625/phantom_stat_OeY9PO.log
+2020-11-23 14:09:56,668 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_14-09-56.517625/phantom_HameRI.log
+2020-11-23 14:09:56,669 [DEBUG] yandextank.common.util util.py:479	Trying to resolve address string: docker.for.win.localhost:5555
+2020-11-23 14:09:56,671 [DEBUG] yandextank.common.util util.py:516	Parsing port
+2020-11-23 14:09:56,678 [DEBUG] yandextank.common.util util.py:527	Lookup result: [(2, 1, 6, '', ('192.168.65.2', 5555)), (2, 2, 17, '', ('192.168.65.2', 5555)), (2, 3, 0, '', ('192.168.65.2', 5555))]
+2020-11-23 14:09:56,678 [INFO] yandextank.common.util util.py:546	Testing connection to resolved address 192.168.65.2 and port 5555
+2020-11-23 14:09:56,686 [INFO] yandextank.plugins.Phantom.utils utils.py:278	Resolved docker.for.win.localhost into 192.168.65.2:5555
+2020-11-23 14:09:56,687 [INFO] yandextank.stepper.main main.py:161	Configuring StepperWrapper...
+2020-11-23 14:09:56,689 [DEBUG] yandextank.stepper.main main.py:140	Option ammofile = /var/loadtest/ammo.txt
+2020-11-23 14:09:56,691 [DEBUG] yandextank.stepper.main main.py:140	Option ammo_type = phantom
+2020-11-23 14:09:56,693 [DEBUG] yandextank.stepper.main main.py:140	Option loop = -1
+2020-11-23 14:09:56,693 [DEBUG] yandextank.stepper.main main.py:140	Option ammo_limit = -1
+2020-11-23 14:09:56,694 [DEBUG] yandextank.stepper.main main.py:140	Option load_profile = {'load_type': 'rps', 'schedule': 'const(2, 30)'}
+2020-11-23 14:09:56,695 [DEBUG] yandextank.stepper.main main.py:140	Option instances = 1000
+2020-11-23 14:09:56,696 [DEBUG] yandextank.stepper.main main.py:140	Option uris = []
+2020-11-23 14:09:56,696 [DEBUG] yandextank.stepper.main main.py:140	Option headers = []
+2020-11-23 14:09:56,697 [DEBUG] yandextank.stepper.main main.py:140	Option header_http = 1.0
+2020-11-23 14:09:56,698 [DEBUG] yandextank.stepper.main main.py:140	Option autocases = 0
+2020-11-23 14:09:56,698 [DEBUG] yandextank.stepper.main main.py:140	Option enum_ammo = False
+2020-11-23 14:09:56,699 [DEBUG] yandextank.stepper.main main.py:140	Option use_caching = True
+2020-11-23 14:09:56,699 [DEBUG] yandextank.stepper.main main.py:140	Option file_cache = 8192
+2020-11-23 14:09:56,700 [DEBUG] yandextank.stepper.main main.py:140	Option cache_dir = None
+2020-11-23 14:09:56,700 [DEBUG] yandextank.stepper.main main.py:140	Option force_stepping = 0
+2020-11-23 14:09:56,701 [DEBUG] yandextank.stepper.main main.py:140	Option load_profile = {'load_type': 'rps', 'schedule': 'const(2, 30)'}
+2020-11-23 14:09:56,701 [DEBUG] yandextank.stepper.main main.py:140	Option chosen_cases = 
+2020-11-23 14:09:56,704 [ERROR] root consoleworker.py:268	Exception occurred:
+<type 'exceptions.OSError'>: [Errno 2] No such file or directory: '/var/loadtest/ammo.txt'
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 106, in config_file
+    self._config_file = self.compose_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 114, in compose_config
+    streams_config += stream.compose_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 288, in compose_config
+    self.stepper_wrapper.prepare_stepper()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/stepper/main.py", line 212, in prepare_stepper
+    self.stpd = self.__get_stpd_filename()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/stepper/main.py", line 263, in __get_stpd_filename
+    hashed_str += sep + opener.hash
+
+  File "/usr/local/lib/python2.7/dist-packages/netort/resource.py", line 147, in hash
+    stat = os.stat(self.f_path)
+
+2020-11-23 14:09:56,707 [INFO] root consoleworker.py:269	Trying to clean up
+2020-11-23 14:09:56,707 [INFO] yandextank.core.tankcore tankcore.py:561	Releasing lock: /var/lock/lunapark_om9Fiy.lock
+2020-11-23 14:09:56,712 [WARNING] root consoleworker.py:408	Job number is not available yet
+2020-11-23 14:09:56,714 [WARNING] root consoleworker.py:415	Job number is not available yet
+2020-11-23 14:09:56,726 [DEBUG] yandextank.core.tankcore tankcore.py:367	Collecting artifacts
+2020-11-23 14:09:56,727 [INFO] yandextank.core.tankcore tankcore.py:368	Artifacts dir: /var/loadtest/logs/2020-11-23_14-09-56.517625
+2020-11-23 14:09:56,728 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_14-09-56.517625/answ_vUeTDo.log to /var/loadtest/logs/2020-11-23_14-09-56.517625/answ_vUeTDo.log
+2020-11-23 14:09:56,733 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_14-09-56.517625/answ_vUeTDo.log
+2020-11-23 14:09:56,734 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_14-09-56.517625/phantom_HameRI.log to /var/loadtest/logs/2020-11-23_14-09-56.517625/phantom_HameRI.log
+2020-11-23 14:09:56,738 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_14-09-56.517625/phantom_HameRI.log
+2020-11-23 14:09:56,740 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: validation_error.yaml to /var/loadtest/logs/2020-11-23_14-09-56.517625/validation_error.yaml
+2020-11-23 14:09:56,742 [WARNING] yandextank.core.tankcore tankcore.py:424	File not found to collect: validation_error.yaml
+2020-11-23 14:09:56,743 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_14-09-56.517625/phout_7_6UEJ.log to /var/loadtest/logs/2020-11-23_14-09-56.517625/phout_7_6UEJ.log
+2020-11-23 14:09:56,747 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_14-09-56.517625/phout_7_6UEJ.log
+2020-11-23 14:09:56,749 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_14-09-56.517625/phantom_stat_OeY9PO.log to /var/loadtest/logs/2020-11-23_14-09-56.517625/phantom_stat_OeY9PO.log
+2020-11-23 14:09:56,753 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_14-09-56.517625/phantom_stat_OeY9PO.log

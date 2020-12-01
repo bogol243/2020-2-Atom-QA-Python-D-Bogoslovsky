@@ -1,0 +1,539 @@
+2020-11-23 11:13:54,837	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for 0.0.0.0, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2020-11-23 11:13:54,846	Job number is not available yet
+2020-11-23 11:13:54,847	Job number is not available yet
+2020-11-23 11:13:54,865	File already exists: /var/loadtest/logs/2020-11-23_11-13-54.660874/phantom_JGSaSX.log
+2020-11-23 11:13:54,870	File already exists: /var/loadtest/logs/2020-11-23_11-13-54.660874/phantom_stat_yJwd9M.log
+2020-11-23 11:13:54,875	File already exists: /var/loadtest/logs/2020-11-23_11-13-54.660874/answ_dilnyS.log
+2020-11-23 11:13:54,878	File not found to collect: validation_error.yaml
+2020-11-23 11:13:54,883	File already exists: /var/loadtest/logs/2020-11-23_11-13-54.660874/phout_PlH9Y5.log
+2020-11-23 14:01:37,099	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for 127.0.0.1, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2020-11-23 14:01:37,110	Job number is not available yet
+2020-11-23 14:01:37,111	Job number is not available yet
+2020-11-23 14:01:37,128	File already exists: /var/loadtest/logs/2020-11-23_14-01-36.919145/answ_wrlEPD.log
+2020-11-23 14:01:37,134	File already exists: /var/loadtest/logs/2020-11-23_14-01-36.919145/phantom_stat_1LWRkP.log
+2020-11-23 14:01:37,136	File not found to collect: validation_error.yaml
+2020-11-23 14:01:37,143	File already exists: /var/loadtest/logs/2020-11-23_14-01-36.919145/phout_YkL8K1.log
+2020-11-23 14:01:37,148	File already exists: /var/loadtest/logs/2020-11-23_14-01-36.919145/phantom_X69sZQ.log
+2020-11-23 14:06:53,582	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for 10.0.75.1, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2020-11-23 14:06:53,608	Job number is not available yet
+2020-11-23 14:06:53,611	Job number is not available yet
+2020-11-23 14:06:53,639	File already exists: /var/loadtest/logs/2020-11-23_14-06-38.352346/phout_i1SilM.log
+2020-11-23 14:06:53,646	File already exists: /var/loadtest/logs/2020-11-23_14-06-38.352346/answ_idb6bE.log
+2020-11-23 14:06:53,655	File already exists: /var/loadtest/logs/2020-11-23_14-06-38.352346/phantom_stat_32a3i3.log
+2020-11-23 14:06:53,658	File not found to collect: validation_error.yaml
+2020-11-23 14:06:53,665	File already exists: /var/loadtest/logs/2020-11-23_14-06-38.352346/phantom_QOdjeL.log
+2020-11-23 14:08:03,602	Interrupting
+2020-11-23 14:08:08,308	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for 95.66.240.204, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2020-11-23 14:08:08,317	Job number is not available yet
+2020-11-23 14:08:08,318	Job number is not available yet
+2020-11-23 14:08:08,337	File already exists: /var/loadtest/logs/2020-11-23_14-08-02.056424/phout_4Xps82.log
+2020-11-23 14:08:08,343	File already exists: /var/loadtest/logs/2020-11-23_14-08-02.056424/phantom_0suEbS.log
+2020-11-23 14:08:08,347	File not found to collect: validation_error.yaml
+2020-11-23 14:08:08,354	File already exists: /var/loadtest/logs/2020-11-23_14-08-02.056424/phantom_stat_nbA6bs.log
+2020-11-23 14:08:08,363	File already exists: /var/loadtest/logs/2020-11-23_14-08-02.056424/answ_gseEWz.log
+2020-11-23 14:09:56,704	Exception occurred:
+<type 'exceptions.OSError'>: [Errno 2] No such file or directory: '/var/loadtest/ammo.txt'
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 106, in config_file
+    self._config_file = self.compose_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 114, in compose_config
+    streams_config += stream.compose_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 288, in compose_config
+    self.stepper_wrapper.prepare_stepper()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/stepper/main.py", line 212, in prepare_stepper
+    self.stpd = self.__get_stpd_filename()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/stepper/main.py", line 263, in __get_stpd_filename
+    hashed_str += sep + opener.hash
+
+  File "/usr/local/lib/python2.7/dist-packages/netort/resource.py", line 147, in hash
+    stat = os.stat(self.f_path)
+
+2020-11-23 14:09:56,712	Job number is not available yet
+2020-11-23 14:09:56,714	Job number is not available yet
+2020-11-23 14:09:56,733	File already exists: /var/loadtest/logs/2020-11-23_14-09-56.517625/answ_vUeTDo.log
+2020-11-23 14:09:56,738	File already exists: /var/loadtest/logs/2020-11-23_14-09-56.517625/phantom_HameRI.log
+2020-11-23 14:09:56,742	File not found to collect: validation_error.yaml
+2020-11-23 14:09:56,747	File already exists: /var/loadtest/logs/2020-11-23_14-09-56.517625/phout_7_6UEJ.log
+2020-11-23 14:09:56,753	File already exists: /var/loadtest/logs/2020-11-23_14-09-56.517625/phantom_stat_OeY9PO.log
+2020-11-23 14:11:16,374	There were errors:
+df: no file systems processed
+
+2020-11-23 14:11:17,122	Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/DataUploader/client.py", line 192, in __make_api_request
+    response = self.__send_single_request(request, ids.next(), trace=trace)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/DataUploader/client.py", line 131, in __send_single_request
+    resp = self.session.send(p, timeout=self.connection_timeout)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', BadStatusLine("''",))
+
+2020-11-23 14:11:17,126	Network error, will retry in 10s...
+2020-11-23 14:11:29,595	There were errors:
+df: no file systems processed
+
+2020-11-23 14:11:41,564	There were errors:
+df: no file systems processed
+
+2020-11-23 14:11:52,874	There were errors:
+df: no file systems processed
+
+2020-11-23 14:12:00,949	File already exists: /var/loadtest/logs/2020-11-23_14-11-12.707038/phantom__NbNkm.conf
+2020-11-23 14:12:00,965	File already exists: /var/loadtest/logs/2020-11-23_14-11-12.707038/phantom_stdout_stderr_L8UgNm.log
+2020-11-23 14:12:00,982	File already exists: /var/loadtest/logs/2020-11-23_14-11-12.707038/phantom_stat_kV0b5A.log
+2020-11-23 14:12:00,989	File already exists: /var/loadtest/logs/2020-11-23_14-11-12.707038/answ_bNo27d.log
+2020-11-23 14:12:00,992	File not found to collect: validation_error.yaml
+2020-11-23 14:12:01,014	File already exists: /var/loadtest/logs/2020-11-23_14-11-12.707038/phout__ln3T0.log
+2020-11-23 14:12:01,022	File already exists: /var/loadtest/logs/2020-11-23_14-11-12.707038/phantom_tnbZzw.log
+2020-11-23 14:14:47,747	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for 0.0.0.0, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2020-11-23 14:14:47,757	Job number is not available yet
+2020-11-23 14:14:47,759	Job number is not available yet
+2020-11-23 14:14:47,775	File already exists: /var/loadtest/logs/2020-11-23_14-14-47.584302/phantom_SZxRBU.log
+2020-11-23 14:14:47,781	File already exists: /var/loadtest/logs/2020-11-23_14-14-47.584302/answ_n7lWKE.log
+2020-11-23 14:14:47,786	File already exists: /var/loadtest/logs/2020-11-23_14-14-47.584302/phout_f5iEQp.log
+2020-11-23 14:14:47,789	File not found to collect: validation_error.yaml
+2020-11-23 14:14:47,793	File already exists: /var/loadtest/logs/2020-11-23_14-14-47.584302/phantom_stat_RtCcH_.log
+2020-11-23 14:16:40,008	Failed to install monitoring agent to docker.for.win.localhost
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 362, in connect
+    raise NoValidConnectionsError(errors)
+NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.65.2
+2020-11-23 14:16:56,107	There were errors:
+df: no file systems processed
+
+2020-11-23 14:16:59,022	There were errors:
+df: no file systems processed
+
+2020-11-23 14:17:10,812	There were errors:
+df: no file systems processed
+
+2020-11-23 14:17:22,119	There were errors:
+df: no file systems processed
+
+2020-11-23 14:17:30,415	File already exists: /var/loadtest/logs/2020-11-23_14-16-35.565852/phout_vIqJ72.log
+2020-11-23 14:17:30,441	File already exists: /var/loadtest/logs/2020-11-23_14-16-35.565852/phantom_yu_hxt.conf
+2020-11-23 14:17:30,458	File already exists: /var/loadtest/logs/2020-11-23_14-16-35.565852/monitoring_85GSYk.xml
+2020-11-23 14:17:30,465	File not found to collect: validation_error.yaml
+2020-11-23 14:17:30,513	File already exists: /var/loadtest/logs/2020-11-23_14-16-35.565852/phantom_stat_MydhVU.log
+2020-11-23 14:17:30,529	File already exists: /var/loadtest/logs/2020-11-23_14-16-35.565852/phantom_QpceUv.log
+2020-11-23 14:17:30,549	File already exists: /var/loadtest/logs/2020-11-23_14-16-35.565852/phantom_stdout_stderr__1S8zu.log
+2020-11-23 14:17:30,562	File already exists: /var/loadtest/logs/2020-11-23_14-16-35.565852/answ_DzPQVo.log
+2020-11-23 14:18:51,319	Failed to install monitoring agent to docker.for.win.localhost
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 362, in connect
+    raise NoValidConnectionsError(errors)
+NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.65.2
+2020-11-23 14:19:07,438	There were errors:
+df: no file systems processed
+
+2020-11-23 14:19:10,544	There were errors:
+df: no file systems processed
+
+2020-11-23 14:19:21,704	There were errors:
+df: no file systems processed
+
+2020-11-23 14:19:33,889	There were errors:
+df: no file systems processed
+
+2020-11-23 14:19:45,371	There were errors:
+df: no file systems processed
+
+2020-11-23 14:19:56,704	There were errors:
+df: no file systems processed
+
+2020-11-23 14:20:07,747	There were errors:
+df: no file systems processed
+
+2020-11-23 14:20:18,913	There were errors:
+df: no file systems processed
+
+2020-11-23 14:20:30,201	There were errors:
+df: no file systems processed
+
+2020-11-23 14:20:41,527	There were errors:
+df: no file systems processed
+
+2020-11-23 14:20:52,649	There were errors:
+df: no file systems processed
+
+2020-11-23 14:21:03,908	There were errors:
+df: no file systems processed
+
+2020-11-23 14:21:15,353	There were errors:
+df: no file systems processed
+
+2020-11-23 14:21:27,537	There were errors:
+df: no file systems processed
+
+2020-11-23 14:21:38,887	There were errors:
+df: no file systems processed
+
+2020-11-23 14:21:50,118	There were errors:
+df: no file systems processed
+
+2020-11-23 14:22:01,313	There were errors:
+df: no file systems processed
+
+2020-11-23 14:22:11,451	File already exists: /var/loadtest/logs/2020-11-23_14-18-45.718137/phantom_stdout_stderr_24ihne.log
+2020-11-23 14:22:11,457	File already exists: /var/loadtest/logs/2020-11-23_14-18-45.718137/monitoring_wi43oX.xml
+2020-11-23 14:22:11,462	File already exists: /var/loadtest/logs/2020-11-23_14-18-45.718137/phantom_stat_Ogo6F2.log
+2020-11-23 14:22:11,467	File already exists: /var/loadtest/logs/2020-11-23_14-18-45.718137/phantom_XJ19Kb.conf
+2020-11-23 14:22:11,469	File not found to collect: validation_error.yaml
+2020-11-23 14:22:11,485	File already exists: /var/loadtest/logs/2020-11-23_14-18-45.718137/answ_jmuCnQ.log
+2020-11-23 14:22:11,488	File already exists: /var/loadtest/logs/2020-11-23_14-18-45.718137/phout_FfbQYi.log
+2020-11-23 14:22:11,495	File already exists: /var/loadtest/logs/2020-11-23_14-18-45.718137/phantom_qvxGxx.log
+2020-11-23 14:25:37,874	Failed to install monitoring agent to docker.for.win.localhost
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 362, in connect
+    raise NoValidConnectionsError(errors)
+NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.65.2
+2020-11-23 14:25:53,782	There were errors:
+df: no file systems processed
+
+2020-11-23 14:25:56,850	There were errors:
+df: no file systems processed
+
+2020-11-23 14:26:07,896	There were errors:
+df: no file systems processed
+
+2020-11-23 14:26:18,970	There were errors:
+df: no file systems processed
+
+2020-11-23 14:26:29,994	There were errors:
+df: no file systems processed
+
+2020-11-23 14:26:41,099	There were errors:
+df: no file systems processed
+
+2020-11-23 14:26:52,145	There were errors:
+df: no file systems processed
+
+2020-11-23 14:27:03,214	There were errors:
+df: no file systems processed
+
+2020-11-23 14:27:13,021	Interrupting
+2020-11-23 14:27:15,581	File already exists: /var/loadtest/logs/2020-11-23_14-25-33.672376/phout_KoSx4x.log
+2020-11-23 14:27:15,588	File already exists: /var/loadtest/logs/2020-11-23_14-25-33.672376/phantom_wEMr9B.conf
+2020-11-23 14:27:15,594	File already exists: /var/loadtest/logs/2020-11-23_14-25-33.672376/monitoring_mdyXh0.xml
+2020-11-23 14:27:15,599	File already exists: /var/loadtest/logs/2020-11-23_14-25-33.672376/phantom_stat_GCToMT.log
+2020-11-23 14:27:15,603	File not found to collect: validation_error.yaml
+2020-11-23 14:27:15,611	File already exists: /var/loadtest/logs/2020-11-23_14-25-33.672376/phantom_QoQUeZ.log
+2020-11-23 14:27:15,632	File already exists: /var/loadtest/logs/2020-11-23_14-25-33.672376/phantom_stdout_stderr_OTz_SO.log
+2020-11-23 14:27:15,640	File already exists: /var/loadtest/logs/2020-11-23_14-25-33.672376/answ_UcBPUl.log
+2020-11-23 14:27:47,322	Failed to install monitoring agent to docker.for.win.localhost
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 362, in connect
+    raise NoValidConnectionsError(errors)
+NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.65.2
+2020-11-23 14:28:03,244	There were errors:
+df: no file systems processed
+
+2020-11-23 14:28:06,224	There were errors:
+df: no file systems processed
+
+2020-11-23 14:28:17,274	There were errors:
+df: no file systems processed
+
+2020-11-23 14:28:28,587	There were errors:
+df: no file systems processed
+
+2020-11-23 14:28:39,662	There were errors:
+df: no file systems processed
+
+2020-11-23 14:28:50,770	There were errors:
+df: no file systems processed
+
+2020-11-23 14:29:01,855	There were errors:
+df: no file systems processed
+
+2020-11-23 14:29:12,964	There were errors:
+df: no file systems processed
+
+2020-11-23 14:29:24,123	There were errors:
+df: no file systems processed
+
+2020-11-23 14:29:35,171	There were errors:
+df: no file systems processed
+
+2020-11-23 14:29:46,442	There were errors:
+df: no file systems processed
+
+2020-11-23 14:29:57,664	There were errors:
+df: no file systems processed
+
+2020-11-23 14:30:08,841	There were errors:
+df: no file systems processed
+
+2020-11-23 14:30:20,110	There were errors:
+df: no file systems processed
+
+2020-11-23 14:30:31,235	There were errors:
+df: no file systems processed
+
+2020-11-23 14:30:42,500	There were errors:
+df: no file systems processed
+
+2020-11-23 14:30:53,762	There were errors:
+df: no file systems processed
+
+2020-11-23 14:31:04,855	There were errors:
+df: no file systems processed
+
+2020-11-23 14:31:15,938	There were errors:
+df: no file systems processed
+
+2020-11-23 14:31:27,027	There were errors:
+df: no file systems processed
+
+2020-11-23 14:31:38,129	There were errors:
+df: no file systems processed
+
+2020-11-23 14:31:49,209	There were errors:
+df: no file systems processed
+
+2020-11-23 14:32:00,333	There were errors:
+df: no file systems processed
+
+2020-11-23 14:32:07,164	File already exists: /var/loadtest/logs/2020-11-23_14-27-41.642662/phantom_stat_4ap4OE.log
+2020-11-23 14:32:07,168	File already exists: /var/loadtest/logs/2020-11-23_14-27-41.642662/answ_gKwdiQ.log
+2020-11-23 14:32:07,171	File not found to collect: validation_error.yaml
+2020-11-23 14:32:07,178	File already exists: /var/loadtest/logs/2020-11-23_14-27-41.642662/monitoring_OCTxbm.xml
+2020-11-23 14:32:07,183	File already exists: /var/loadtest/logs/2020-11-23_14-27-41.642662/phantom_vehOuc.log
+2020-11-23 14:32:07,188	File already exists: /var/loadtest/logs/2020-11-23_14-27-41.642662/phout_ApcqWx.log
+2020-11-23 14:32:07,208	File already exists: /var/loadtest/logs/2020-11-23_14-27-41.642662/phantom_GiZE6L.conf
+2020-11-23 14:32:07,214	File already exists: /var/loadtest/logs/2020-11-23_14-27-41.642662/phantom_stdout_stderr_cPvjhK.log
+2020-11-23 14:33:31,678	Failed to install monitoring agent to docker.for.win.localhost
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 362, in connect
+    raise NoValidConnectionsError(errors)
+NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.65.2
+2020-11-23 14:33:47,594	There were errors:
+df: no file systems processed
+
+2020-11-23 14:33:50,476	There were errors:
+df: no file systems processed
+
+2020-11-23 14:34:01,444	There were errors:
+df: no file systems processed
+
+2020-11-23 14:34:12,623	There were errors:
+df: no file systems processed
+
+2020-11-23 14:34:23,672	There were errors:
+df: no file systems processed
+
+2020-11-23 14:34:34,678	There were errors:
+df: no file systems processed
+
+2020-11-23 14:34:46,016	There were errors:
+df: no file systems processed
+
+2020-11-23 14:34:57,379	There were errors:
+df: no file systems processed
+
+2020-11-23 14:35:08,537	There were errors:
+df: no file systems processed
+
+2020-11-23 14:35:19,842	There were errors:
+df: no file systems processed
+
+2020-11-23 14:35:31,430	There were errors:
+df: no file systems processed
+
+2020-11-23 14:35:42,903	There were errors:
+df: no file systems processed
+
+2020-11-23 14:35:54,282	There were errors:
+df: no file systems processed
+
+2020-11-23 14:36:05,557	There were errors:
+df: no file systems processed
+
+2020-11-23 14:36:17,100	There were errors:
+df: no file systems processed
+
+2020-11-23 14:36:28,858	There were errors:
+df: no file systems processed
+
+2020-11-23 14:36:40,311	There were errors:
+df: no file systems processed
+
+2020-11-23 14:36:51,678	There were errors:
+df: no file systems processed
+
+2020-11-23 14:37:03,289	There were errors:
+df: no file systems processed
+
+2020-11-23 14:37:14,836	There were errors:
+df: no file systems processed
+
+2020-11-23 14:37:26,322	There were errors:
+df: no file systems processed
+
+2020-11-23 14:37:37,719	There were errors:
+df: no file systems processed
+
+2020-11-23 14:37:49,143	There were errors:
+df: no file systems processed
+
+2020-11-23 14:37:51,765	File already exists: /var/loadtest/logs/2020-11-23_14-33-27.505540/phantom_UTpDT3.conf
+2020-11-23 14:37:51,768	File already exists: /var/loadtest/logs/2020-11-23_14-33-27.505540/phout_DFD03l.log
+2020-11-23 14:37:51,774	File already exists: /var/loadtest/logs/2020-11-23_14-33-27.505540/phantom_stdout_stderr_cJjjJd.log
+2020-11-23 14:37:51,780	File already exists: /var/loadtest/logs/2020-11-23_14-33-27.505540/phantom_stat_HP1X6h.log
+2020-11-23 14:37:51,783	File not found to collect: validation_error.yaml
+2020-11-23 14:37:51,792	File already exists: /var/loadtest/logs/2020-11-23_14-33-27.505540/answ_d7TPIE.log
+2020-11-23 14:37:51,798	File already exists: /var/loadtest/logs/2020-11-23_14-33-27.505540/phantom_q3Ryxv.log
+2020-11-23 14:37:51,816	File already exists: /var/loadtest/logs/2020-11-23_14-33-27.505540/monitoring_BpvfZH.xml

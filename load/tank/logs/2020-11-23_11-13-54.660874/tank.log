@@ -1,0 +1,112 @@
+2020-11-23 11:13:54,767 [INFO] root consoleworker.py:434	Log file created
+2020-11-23 11:13:54,768 [INFO] root consoleworker.py:438	Logging handler <logging.FileHandler object at 0x7fb7ea23db90> added
+2020-11-23 11:13:54,769 [INFO] root consoleworker.py:438	Logging handler <logging.StreamHandler object at 0x7fb7ea2867d0> added
+2020-11-23 11:13:54,769 [INFO] root consoleworker.py:438	Logging handler <logging.StreamHandler object at 0x7fb7ea22b9d0> added
+2020-11-23 11:13:54,770 [INFO] root consoleworker.py:373	Created a folder for the test. /var/loadtest/logs/2020-11-23_11-13-54.660874
+2020-11-23 11:13:54,771 [INFO] yandextank.core.tankcore tankcore.py:237	Configuring plugins...
+2020-11-23 11:13:54,774 [INFO] yandextank.core.tankcore tankcore.py:190	Loading plugins...
+2020-11-23 11:13:54,776 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin phantom from yandextank.plugins.Phantom
+2020-11-23 11:13:54,777 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin rcheck from yandextank.plugins.ResourceCheck
+2020-11-23 11:13:54,778 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin json_report from yandextank.plugins.JsonReport
+2020-11-23 11:13:54,786 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin overload from yandextank.plugins.DataUploader
+2020-11-23 11:13:54,787 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin rcassert from yandextank.plugins.RCAssert
+2020-11-23 11:13:54,787 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin console from yandextank.plugins.Console
+2020-11-23 11:13:54,788 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin shellexec from yandextank.plugins.ShellExec
+2020-11-23 11:13:54,789 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin autostop from yandextank.plugins.Autostop
+2020-11-23 11:13:54,789 [DEBUG] yandextank.core.tankcore tankcore.py:212	Plugin instances: {'plugin_phantom': <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fb7e9f7cf50>, 'plugin_autostop': <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fb7e9f7f6d0>, 'plugin_shellexec': <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fb7e9f7f110>, 'plugin_console': <yandextank.plugins.Console.plugin.Plugin object at 0x7fb7e9f7f1d0>, 'plugin_rcassert': <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fb7e9f7f4d0>, 'plugin_rcheck': <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fb7e9f7ce10>, 'plugin_overload': <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fb7e9f7c9d0>, 'plugin_json_report': <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fb7ea2a6990>}
+2020-11-23 11:13:54,790 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fb7e9f7cf50>
+2020-11-23 11:13:54,792 [DEBUG] yandextank.core.tankcore tankcore.py:391	Searching for plugin: <class 'yandextank.plugins.Autostop.plugin.Plugin'>
+2020-11-23 11:13:54,804 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_11-13-54.660874/answ_dilnyS.log
+2020-11-23 11:13:54,810 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_11-13-54.660874/phout_PlH9Y5.log
+2020-11-23 11:13:54,810 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_11-13-54.660874/phantom_stat_yJwd9M.log
+2020-11-23 11:13:54,814 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_11-13-54.660874/phantom_JGSaSX.log
+2020-11-23 11:13:54,815 [DEBUG] yandextank.common.util util.py:479	Trying to resolve address string: 0.0.0.0:5555
+2020-11-23 11:13:54,817 [DEBUG] yandextank.common.util util.py:516	Parsing port
+2020-11-23 11:13:54,818 [DEBUG] yandextank.common.util util.py:527	Lookup result: [(2, 1, 6, '', ('0.0.0.0', 5555)), (2, 2, 17, '', ('0.0.0.0', 5555)), (2, 3, 0, '', ('0.0.0.0', 5555))]
+2020-11-23 11:13:54,818 [INFO] yandextank.common.util util.py:546	Testing connection to resolved address 0.0.0.0 and port 5555
+2020-11-23 11:13:54,823 [DEBUG] yandextank.common.util util.py:565	Exception on connect attempt [0.0.0.0]:5555 : Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 561, in __test
+    test_sock.connect(sa)
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+2020-11-23 11:13:54,824 [INFO] yandextank.common.util util.py:549	Failed TCP connection test using [0.0.0.0]:5555
+2020-11-23 11:13:54,825 [DEBUG] yandextank.common.util util.py:550	Failed TCP connection test using [0.0.0.0]:5555
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 547, in resolve
+    self.__test(family, (parsed_ip, port))
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 567, in __test
+    raise RuntimeError(msg % (sa[0], sa[1]))
+RuntimeError: TCP Connection test failed for [0.0.0.0]:5555, use phantom.connection_test=0 to disable it
+2020-11-23 11:13:54,826 [INFO] yandextank.common.util util.py:546	Testing connection to resolved address 0.0.0.0 and port 5555
+2020-11-23 11:13:54,828 [DEBUG] yandextank.common.util util.py:565	Exception on connect attempt [0.0.0.0]:5555 : Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 561, in __test
+    test_sock.connect(sa)
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+2020-11-23 11:13:54,829 [INFO] yandextank.common.util util.py:549	Failed TCP connection test using [0.0.0.0]:5555
+2020-11-23 11:13:54,830 [DEBUG] yandextank.common.util util.py:550	Failed TCP connection test using [0.0.0.0]:5555
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 547, in resolve
+    self.__test(family, (parsed_ip, port))
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 567, in __test
+    raise RuntimeError(msg % (sa[0], sa[1]))
+RuntimeError: TCP Connection test failed for [0.0.0.0]:5555, use phantom.connection_test=0 to disable it
+2020-11-23 11:13:54,831 [INFO] yandextank.common.util util.py:546	Testing connection to resolved address 0.0.0.0 and port 5555
+2020-11-23 11:13:54,832 [DEBUG] yandextank.common.util util.py:565	Exception on connect attempt [0.0.0.0]:5555 : Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 561, in __test
+    test_sock.connect(sa)
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+2020-11-23 11:13:54,833 [INFO] yandextank.common.util util.py:549	Failed TCP connection test using [0.0.0.0]:5555
+2020-11-23 11:13:54,834 [DEBUG] yandextank.common.util util.py:550	Failed TCP connection test using [0.0.0.0]:5555
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 547, in resolve
+    self.__test(family, (parsed_ip, port))
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 567, in __test
+    raise RuntimeError(msg % (sa[0], sa[1]))
+RuntimeError: TCP Connection test failed for [0.0.0.0]:5555, use phantom.connection_test=0 to disable it
+2020-11-23 11:13:54,837 [ERROR] root consoleworker.py:268	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for 0.0.0.0, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2020-11-23 11:13:54,840 [INFO] root consoleworker.py:269	Trying to clean up
+2020-11-23 11:13:54,841 [INFO] yandextank.core.tankcore tankcore.py:561	Releasing lock: /var/lock/lunapark_dybAKI.lock
+2020-11-23 11:13:54,846 [WARNING] root consoleworker.py:408	Job number is not available yet
+2020-11-23 11:13:54,847 [WARNING] root consoleworker.py:415	Job number is not available yet
+2020-11-23 11:13:54,859 [DEBUG] yandextank.core.tankcore tankcore.py:367	Collecting artifacts
+2020-11-23 11:13:54,860 [INFO] yandextank.core.tankcore tankcore.py:368	Artifacts dir: /var/loadtest/logs/2020-11-23_11-13-54.660874
+2020-11-23 11:13:54,861 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_11-13-54.660874/phantom_JGSaSX.log to /var/loadtest/logs/2020-11-23_11-13-54.660874/phantom_JGSaSX.log
+2020-11-23 11:13:54,865 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_11-13-54.660874/phantom_JGSaSX.log
+2020-11-23 11:13:54,866 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_11-13-54.660874/phantom_stat_yJwd9M.log to /var/loadtest/logs/2020-11-23_11-13-54.660874/phantom_stat_yJwd9M.log
+2020-11-23 11:13:54,870 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_11-13-54.660874/phantom_stat_yJwd9M.log
+2020-11-23 11:13:54,871 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_11-13-54.660874/answ_dilnyS.log to /var/loadtest/logs/2020-11-23_11-13-54.660874/answ_dilnyS.log
+2020-11-23 11:13:54,875 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_11-13-54.660874/answ_dilnyS.log
+2020-11-23 11:13:54,877 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: validation_error.yaml to /var/loadtest/logs/2020-11-23_11-13-54.660874/validation_error.yaml
+2020-11-23 11:13:54,878 [WARNING] yandextank.core.tankcore tankcore.py:424	File not found to collect: validation_error.yaml
+2020-11-23 11:13:54,879 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_11-13-54.660874/phout_PlH9Y5.log to /var/loadtest/logs/2020-11-23_11-13-54.660874/phout_PlH9Y5.log
+2020-11-23 11:13:54,883 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_11-13-54.660874/phout_PlH9Y5.log

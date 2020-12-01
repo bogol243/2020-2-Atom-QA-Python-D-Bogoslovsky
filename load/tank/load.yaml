@@ -1,0 +1,12 @@
+phantom:
+  address: docker.for.win.localhost:5555
+  ammofile: /var/loadtest/ammo.txt
+  load_profile:
+    load_type: rps
+    schedule: step(1, 10, 3, 60s)
+overload:
+  enabled: true
+  token_file: /var/loadtest/token
+  package: yandextank.plugins.DataUploader
+  job_name: Technoatom-QA-Homework-Tank-3
+  job_dsc: step(1, 10, 3, 60s)
